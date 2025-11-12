@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPAMO | Your Dream Should Be Reality - Rwanda</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic components -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #10B981; /* Emerald Green - Growth/Hope */
+            --color-secondary: #2563EB; /* Blue - Trust/Knowledge */
+            --color-accent: #FBBF24; /* Amber - Radiance/Future */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        /* Custom Utility Classes for Brand Colors */
+        .bg-impamo-primary { background-color: var(--color-primary); }
+        .text-impamo-primary { color: var(--color-primary); }
+        .bg-impamo-secondary { background-color: var(--color-secondary); }
+        .text-impamo-secondary { color: var(--color-secondary); }
+        .border-impamo-primary { border-color: var(--color-primary); }
+        .btn-primary {
+            @apply inline-block px-8 py-3 text-lg font-semibold rounded-full shadow-lg transition duration-300 transform hover:scale-105;
+            background-color: var(--color-primary);
+            color: white;
+        }
+        .program-card {
+            /* Updated border to reflect specific program focus */
+            @apply bg-white p-6 rounded-xl shadow-xl transition duration-300 transform hover:shadow-2xl hover:-translate-y-1 border-t-4;
+        }
+        .card-mentorship { border-color: var(--color-primary); }
+        .card-skills { border-color: var(--color-secondary); }
+        .card-opportunities { border-color: var(--color-accent); }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Brand Name -->
+            <div class="flex items-center space-x-2">
+                <span class="text-3xl font-extrabold text-impamo-primary">IMPAMO</span>
+                <span class="text-sm font-medium text-gray-600 hidden sm:inline">| Your Dream Should Be Reality</span>
+            </div>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <a href="#about" class="hover:text-impamo-primary transition">About</a>
+                <a href="#programs" class="hover:text-impamo-primary transition">Programs</a>
+                <a href="#opportunities" class="hover:text-impamo-primary transition">Opportunities</a>
+                <a href="#get-involved" class="hover:text-impamo-primary transition">Get Involved</a>
+            </nav>
+            <!-- CTA Button -->
+            <a href="#" class="bg-impamo-secondary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition hidden sm:block">
+                Donate / Partner
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white pt-24 pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl sm:text-7xl font-extrabold mb-4 leading-tight">
+                Turning Potential Into <span class="text-impamo-primary">Reality</span>.
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Kuganisha Inzozi ku Buri Rwiyemezamirimo. IMPAMO connects Rwandan youth to mentorship, skills, and validated opportunities.
+            </p>
+            <div class="space-x-4">
+                <a href="#programs" class="btn-primary">
+                    Start Your Journey
+                </a>
+                <a href="#opportunities" class="bg-white text-gray-900 px-8 py-3 text-lg font-semibold rounded-full shadow-lg transition duration-300 transform hover:scale-105 hover:bg-gray-100">
+                    View Opportunities
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact/Metrics Section (New) -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">IMPAMO Impact (Pilot Phase)</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Mentors -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-5xl font-extrabold text-impamo-primary">50+</p>
+                    <p class="mt-2 text-lg font-medium text-gray-600">Active Mentors</p>
+                </div>
+                <!-- Opportunities -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-5xl font-extrabold text-impamo-secondary">30+</p>
+                    <p class="mt-2 text-lg font-medium text-gray-600">Opportunities Posted (Per Qtr)</p>
+                </div>
+                <!-- Workshops -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-5xl font-extrabold text-impamo-primary">4</p>
+                    <p class="mt-2 text-lg font-medium text-gray-600">Financial Literacy Workshops</p>
+                </div>
+                <!-- Satisfaction -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-5xl font-extrabold text-impamo-secondary">85%</p>
+                    <p class="mt-2 text-lg font-medium text-gray-600">Mentee Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Mission/Vision Text -->
+                <div>
+                    <span class="text-sm font-semibold uppercase tracking-wider text-impamo-primary">Our Mission</span>
+                    <h2 class="mt-2 text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                        Shaping Rwanda's Future, One Skill at a Time.
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        IMPAMO is a dedicated Rwandan youth-led initiative committed to transforming potential into tangible success. We focus on three critical pillars: **Mentorship**, **Professional Skills & Financial Literacy**, and **Job Opportunity Access**, bridging the gap between education and the modern professional world in Rwanda.
+                    </p>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-start">
+                            <svg class="flex-shrink-0 mt-1 h-6 w-6 text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            <p class="ml-3 text-base text-gray-600">
+                                **Financial Literacy:** Essential training for managing income and building wealth early in a career.
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="flex-shrink-0 mt-1 h-6 w-6 text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M14 4h.01"/><path d="M16 8h.01"/><path d="M10 8h.01"/><path d="M12 4h.01"/><path d="M18 12h.01"/><path d="M6 12h.01"/><path d="M18 6h.01"/><path d="M6 6h.01"/><path d="M18 18h.01"/><path d="M6 18h.01"/><path d="M12 16h.01"/><path d="M14 16h.01"/><path d="M16 16h.01"/><path d="M8 16h.01"/><path d="M10 16h.01"/></svg>
+                            <p class="ml-3 text-base text-gray-600">
+                                **Opportunity Access:** Curated job, internship, and scholarship postings from trusted partners.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Placeholder Image/Graphic -->
+                <div class="hidden md:block">
+                    <!-- Placeholder image to represent Rwandan youth in a learning environment -->
+                    <img src="https://placehold.co/600x400/10B981/ffffff?text=Empowering+Rwandan+Youth" alt="Empowering Rwandan Youth" class="rounded-xl shadow-2xl object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section (Refined to match Charter Scope) -->
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-sm font-semibold uppercase tracking-wider text-impamo-secondary">Our Core Pillars</span>
+            <h2 class="mt-2 text-4xl font-extrabold text-gray-900 mb-12">
+                Phase 1 High-Impact Programs
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Program 1: Mentorship -->
+                <div class="program-card card-mentorship">
+                    <div class="inline-flex p-3 rounded-full bg-impamo-primary/20 text-impamo-primary mb-4">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Impamo: Inzozi (Dream Pathway)</h3>
+                    <p class="text-gray-500 mb-4">
+                        Structured, 6-month mentorship pairings connecting youth with experienced industry leaders across ICT, Finance, and Entrepreneurship.
+                    </p>
+                    <a href="#" class="text-sm font-semibold text-impamo-primary hover:text-impamo-secondary transition">Join the Program &rarr;</a>
+                </div>
+
+                <!-- Program 2: Skills & Financial Literacy -->
+                <div class="program-card card-skills">
+                    <div class="inline-flex p-3 rounded-full bg-impamo-secondary/20 text-impamo-secondary mb-4">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Impamo: Ubushobozi (Financial Capacity)</h3>
+                    <p class="text-gray-500 mb-4">
+                        Workshops covering vital financial literacy (budgeting, saving, investment basics) and job readiness skills (CV, interview coaching).
+                    </p>
+                    <a href="#" class="text-sm font-semibold text-impamo-secondary hover:text-impamo-primary transition">See Workshops &rarr;</a>
+                </div>
+
+                <!-- Program 3: Opportunities Hub -->
+                <div class="program-card card-opportunities">
+                    <div class="inline-flex p-3 rounded-full bg-impamo-accent/20 text-impamo-accent mb-4">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22.956c-2.327 0-4.502-.85-6.182-2.39L4 16.5V2H20v14.5l-4.818 4.066c-1.68 1.54-3.855 2.39-6.182 2.39z"/><path d="M12 7.025v8.05"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Impamo: Amahirwe (Opportunities Hub)</h3>
+                    <p class="text-gray-500 mb-4">
+                        Your central source for vetted job listings, internships, volunteer positions, and global scholarship announcements tailored for Rwandan youth.
+                    </p>
+                    <a href="#opportunities" class="text-sm font-semibold text-impamo-accent hover:text-impamo-secondary transition">Explore Opportunities &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Opportunities Section (Dedicated - New) -->
+    <section id="opportunities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-sm font-semibold uppercase tracking-wider text-impamo-accent">AMA HIRWE</span>
+            <h2 class="mt-2 text-4xl font-extrabold text-gray-900 mb-8">
+                Find Your Next Step: Jobs, Internships, & Training
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="#" class="p-4 bg-gray-50 rounded-lg text-center hover:bg-impamo-accent/10 transition group">
+                    <svg class="mx-auto h-8 w-8 text-impamo-accent group-hover:text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <p class="mt-2 text-sm font-medium text-gray-700">Mentorship</p>
+                </a>
+                <a href="#" class="p-4 bg-gray-50 rounded-lg text-center hover:bg-impamo-accent/10 transition group">
+                    <svg class="mx-auto h-8 w-8 text-impamo-accent group-hover:text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    <p class="mt-2 text-sm font-medium text-gray-700">Job Opportunities</p>
+                </a>
+                <a href="#" class="p-4 bg-gray-50 rounded-lg text-center hover:bg-impamo-accent/10 transition group">
+                    <svg class="mx-auto h-8 w-8 text-impamo-accent group-hover:text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10s-3.5 1.5-3.5 4.5 3.5 4.5 3.5 4.5"/><path d="M19 14.5H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5a4.5 4.5 0 0 0-3.5 4.5c0 1.5 1 2.5 1 2.5"/></svg>
+                    <p class="mt-2 text-sm font-medium text-gray-700">Internships</p>
+                </a>
+                <a href="#" class="p-4 bg-gray-50 rounded-lg text-center hover:bg-impamo-accent/10 transition group">
+                    <svg class="mx-auto h-8 w-8 text-impamo-accent group-hover:text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 5.5v11L12 22 2 17.5V6.5L12 2z"/><polyline points="12 2 12 12 2 6.5"/><polyline points="12 12 22 6.5 22 17.5"/><polyline points="12 12 12 22 2 17.5"/></svg>
+                    <p class="mt-2 text-sm font-medium text-gray-700">Scholarships</p>
+                </a>
+                <a href="#" class="p-4 bg-gray-50 rounded-lg text-center hover:bg-impamo-accent/10 transition group">
+                    <svg class="mx-auto h-8 w-8 text-impamo-accent group-hover:text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="8" x2="16" y1="13" y2="13"/><line x1="8" x2="16" y1="17" y2="17"/><line x1="10" x2="14" y1="21" y2="21"/></svg>
+                    <p class="mt-2 text-sm font-medium text-gray-700">Training/Skills</p>
+                </a>
+                <a href="#" class="p-4 bg-gray-50 rounded-lg text-center hover:bg-impamo-accent/10 transition group">
+                    <svg class="mx-auto h-8 w-8 text-impamo-accent group-hover:text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <p class="mt-2 text-sm font-medium text-gray-700">Financial Literacy</p>
+                </a>
+                <a href="#" class="p-4 bg-gray-50 rounded-lg text-center hover:bg-impamo-accent/10 transition group">
+                    <svg class="mx-auto h-8 w-8 text-impamo-accent group-hover:text-impamo-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M12 17V7"/><path d="M9 10L12 7 15 10"/></svg>
+                    <p class="mt-2 text-sm font-medium text-gray-700">Volunteer</p>
+                </a>
+            </div>
+            <div class="text-center mt-10">
+                 <a href="#" class="bg-impamo-accent text-white px-8 py-3 text-lg font-semibold rounded-full shadow-lg transition duration-300 transform hover:scale-105 hover:bg-yellow-600">
+                    See All 100+ Listings
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section (Placeholder) -->
+    <section id="stories" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-sm font-semibold uppercase tracking-wider text-impamo-primary">Our Impact</span>
+            <h2 class="mt-2 text-4xl font-extrabold text-gray-900 mb-12">
+                Real Stories, Real Transformation
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Story Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-impamo-accent">
+                    <p class="italic text-gray-600 mb-4">"Impamo helped me transition from a village school student to a scholarship recipient at UR. The Igihamo program was life-changing."</p>
+                    <p class="font-bold text-gray-900">Jean-Pierre N.</p>
+                    <p class="text-sm text-gray-500">Scholarship Winner, Kigali</p>
+                </div>
+                <!-- Story Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-impamo-accent">
+                    <p class="italic text-gray-600 mb-4">"The Ubushobozi workshops gave me the confidence to ace my interview and secure my first tech job in a Kigali Innovation City startup."</p>
+                    <p class="font-bold text-gray-900">Divine M.</p>
+                    <p class="text-sm text-gray-500">Software Developer, Kigali</p>
+                </div>
+                <!-- Story Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-impamo-accent">
+                    <p class="italic text-gray-600 mb-4">"As a mentor, connecting with the energy and ambition of young Rwandans through the Inzozi program is the most rewarding experience."</p>
+                    <p class="font-bold text-gray-900">Dr. Uwimana C.</p>
+                    <p class="text-sm text-gray-500">Mentor & Lecturer</p>
+                </div>
+            </div>
+            <a href="#" class="mt-8 inline-block text-impamo-secondary font-semibold hover:text-impamo-primary transition">Read All Stories &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="py-20 bg-impamo-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h2 class="text-4xl font-extrabold mb-4">
+                Join the IMPAMO Movement
+            </h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">
+                Whether you want to mentor, volunteer your skills, or support our mission financially, every action helps turn a dream into reality.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#" class="bg-white text-gray-900 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 hover:bg-gray-100">
+                    Become a Mentor
+                </a>
+                <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 hover:bg-white hover:text-impamo-primary">
+                    Donate Today
+                </a>
+                <a href="#" class="bg-impamo-secondary text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 hover:bg-blue-700">
+                    Partner With Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Col 1: Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="text-2xl font-bold text-white mb-4">IMPAMO</h4>
+                    <p class="text-sm">Empowering young Rwandans to realize their dreams through mentorship and education.</p>
+                    <p class="text-sm mt-4">&copy; 2025 IMPAMO. All rights reserved.</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h5 class="text-lg font-semibold text-white mb-4">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-impamo-primary transition">About Us</a></li>
+                        <li><a href="#programs" class="hover:text-impamo-primary transition">Our Programs</a></li>
+                        <li><a href="#opportunities" class="hover:text-impamo-primary transition">Opportunities Hub</a></li>
+                        <li><a href="#" class="hover:text-impamo-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Get Involved -->
+                <div>
+                    <h5 class="text-lg font-semibold text-white mb-4">Get Involved</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-impamo-primary transition">Become a Mentor</a></li>
+                        <li><a href="#" class="hover:text-impamo-primary transition">Volunteer</a></li>
+                        <li><a href="#" class="hover:text-impamo-primary transition">Donate</a></li>
+                        <li><a href="#" class="hover:text-impamo-primary transition">Partner</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h5 class="text-lg font-semibold text-white mb-4">Contact</h5>
+                    <p class="text-sm">Kigali, Rwanda</p>
+                    <p class="text-sm">info@impamorwanda.org (Placeholder)</p>
+                    <p class="text-sm">+250 XXX XXX XXX (Placeholder)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const nav = document.querySelector('header nav');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                // Toggles visibility of the mobile menu
+                const isHidden = nav.classList.contains('hidden');
+                if (isHidden) {
+                    nav.classList.remove('hidden');
+                    nav.classList.add('flex', 'flex-col', 'absolute', 'top-full', 'left-0', 'w-full', 'bg-white', 'shadow-lg', 'p-4', 'space-y-3');
+                } else {
+                    nav.classList.remove('flex', 'flex-col', 'absolute', 'top-full', 'left-0', 'w-full', 'bg-white', 'shadow-lg', 'p-4', 'space-y-3');
+                    nav.classList.add('hidden');
+                }
+            });
+
+            // Close menu when a link is clicked (mobile view)
+            const navLinks = nav.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!nav.classList.contains('hidden')) {
+                         nav.classList.remove('flex', 'flex-col', 'absolute', 'top-full', 'left-0', 'w-full', 'bg-white', 'shadow-lg', 'p-4', 'space-y-3');
+                         nav.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
